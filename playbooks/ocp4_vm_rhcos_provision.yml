@@ -1,0 +1,6 @@
+ - name: create bootstrap vm
+   hosts: bootstrap
+   gather_facts: false
+   serial: "100%"
+   roles:
+     - bootstrap_vm_create
